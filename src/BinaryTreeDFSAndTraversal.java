@@ -33,6 +33,25 @@ public class BinaryTreeDFSAndTraversal {
 
         final BinaryTree binaryTree = new BinaryTree(one);
 
+        System.out.println("Using Tree:");
         new BinaryTreeViewPrinter().printNode(binaryTree.root);
+
+        System.out.println("---------------");
+        System.out.println("Depth First Search:");
+        System.out.print("5 found in tree? ");
+        System.out.println(binaryTree.dfs(5));
+        System.out.print("-5 found in tree? ");
+        System.out.println(binaryTree.dfs(-5));
+        System.out.println("---------------");
+
+        System.out.println("Pre Order Traversal:");
+        binaryTree.preOrder();
+        System.out.println("---------------");
+        System.out.println("In Order Traversal:");
+        binaryTree.inOrder();
+        System.out.println("---------------");
+        System.out.println("Post Order Traversal:");
+        binaryTree.postOrder();
+        System.out.println("---------------");
     }
 }
